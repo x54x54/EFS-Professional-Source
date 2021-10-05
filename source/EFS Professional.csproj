@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fe46e092-413b-417b-9876-632b2297b7f6</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>EFS Professional</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="EFS_Professional\My\MyApplication.cs" />
+    <Compile Include="EFS_Professional\My\MyComputer.cs" />
+    <Compile Include="EFS_Professional\My\MyProject.cs" />
+    <Compile Include="EFS_Professional\frmLauncher.cs" />
+    <Compile Include="EFS_Professional\My\Resources\Resources.cs" />
+    <Compile Include="EFS_Professional\My\MySettings.cs" />
+    <Compile Include="EFS_Professional\AppConfigClass.cs" />
+    <Compile Include="EFS_Professional\DeviceFilterClass.cs" />
+    <Compile Include="EFS_Professional\OperationCompletedEventHandler.cs" />
+    <Compile Include="EFS_Professional\OperationCompletedEventArgs.cs" />
+    <Compile Include="EFS_Professional\frmChangeLog.cs" />
+    <Compile Include="EFS_Professional\DeviceFilterEditor.cs" />
+    <Compile Include="EFS_Professional\frmEFSProMain.cs" />
+    <Compile Include="EFS_Professional\OperationType.cs" />
+    <Compile Include="EFS_Professional\frmWaitDeviceDialog.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\ADB.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\ADBCommand.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\NoRootException.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\AndroidControl.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\BuildPropertyParser.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\BusyBox.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\DeviceIO.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\Fastboot.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\FastbootCommand.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\FileSystem.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\KernelInfo.cs" />
+    <Compile Include="EFS_Professional\PartitionInfo.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\SU_Binary.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\Helpers\AsyncProcess.cs" />
+    <Compile Include="EFS_Professional\WinADBHelper\Helpers\ProcessHelper.cs" />
+    <Compile Include="EFS_Professional\frmPIT_Magic_Main.cs" />
+    <Compile Include="EFS_Professional\PitData.cs" />
+    <Compile Include="EFS_Professional\PitEntry.cs" />
+    <Compile Include="EFS_Professional\PitInputStream.cs" />
+    <Compile Include="EFS_Professional\PitOutputStream.cs" />
+    <Compile Include="EFS_Professional\AT_Cmd.cs" />
+    <Compile Include="EFS_Professional\ProgressChangedEventHandler.cs" />
+    <Compile Include="EFS_Professional\OperationModes.cs" />
+    <Compile Include="EFS_Professional\CommandQueue.cs" />
+    <Compile Include="EFS_Professional\CommandQueueProgressChangedEventArgs.cs" />
+    <Compile Include="EFS_Professional\DataActivityEventHandler.cs" />
+    <Compile Include="EFS_Professional\DataActivityEventArgs.cs" />
+    <Compile Include="EFS_Professional\NVItemsStatusEventHandler.cs" />
+    <Compile Include="EFS_Professional\NVItemsStatusEventArgs.cs" />
+    <Compile Include="EFS_Professional\RunCompletedEventHandler.cs" />
+    <Compile Include="EFS_Professional\RunCompletedEventArgs.cs" />
+    <Compile Include="EFS_Professional\Cmd_DIAG_ESN_F.cs" />
+    <Compile Include="EFS_Professional\Cmd_DIAG_EXT_BUILD_ID_F.cs" />
+    <Compile Include="EFS_Professional\DIAG_EXT_BUILD_ID_F_CLS.cs" />
+    <Compile Include="EFS_Professional\Cmd_DIAG_PASSWORD_F.cs" />
+    <Compile Include="EFS_Professional\Cmd_DIAG_SPC_F.cs" />
+    <Compile Include="EFS_Professional\Cmd_DIAG_VERNO_F.cs" />
+    <Compile Include="EFS_Professional\DIAG_VERNO_F_CLS.cs" />
+    <Compile Include="EFS_Professional\Cmd_NV.cs" />
+    <Compile Include="EFS_Professional\Cmd_NV_ESN_I.cs" />
+    <Compile Include="EFS_Professional\Cmd_NV_LOCK_CODE_I.cs" />
+    <Compile Include="EFS_Professional\Cmd_NV_MEID_I.cs" />
+    <Compile Include="EFS_Professional\Cmd_NV_SEC_CODE_I.cs" />
+    <Compile Include="EFS_Professional\Cmd_NV_UE_IMEI_I.cs" />
+    <Compile Include="EFS_Professional\Command.cs" />
+    <Compile Include="EFS_Professional\QCDMCommand.cs" />
+    <Compile Include="EFS_Professional\ICommand.cs" />
+    <Compile Include="EFS_Professional\EnumFileParser.cs" />
+    <Compile Include="EFS_Professional\COMPortManager\COMPortInfo.cs" />
+    <Compile Include="EFS_Professional\COMPortManager\ProcessConnection.cs" />
+    <Compile Include="EFS_Professional\ConnectionUtils.cs" />
+    <Compile Include="EFS_Professional\COMPortManager\NativeMethods.cs" />
+    <Compile Include="EFS_Professional\COMPortManager\SerialCOM.cs" />
+    <Compile Include="EFS_Professional\frmQualcommNVTools.cs" />
+    <Compile Include="EFS_Professional\frmWaitDialog.cs" />
+    <Compile Include="EFS_Professional\NVItem.cs" />
+    <Compile Include="EFS_Professional\NVItemList.cs" />
+    <Compile Include="EFS_Professional\NVItems.cs" />
+    <Compile Include="EFS_Professional\NVItemSkipClass.cs" />
+    <Compile Include="EFS_Professional\NVMemoryManager.cs" />
+    <Compile Include="EFS_Professional\Qcdm.cs" />
+    <Compile Include="EFS_Professional\QualcommDeviceInstance.cs" />
+    <Compile Include="EFS_Professional\CommandByteArrays.cs" />
+    <Compile Include="EFS_Professional\CommandFactory.cs" />
+    <Compile Include="EFS_Professional\ConversionUtils.cs" />
+    <Compile Include="EFS_Professional\CRC.cs" />
+    <Compile Include="EFS_Professional\CDMACRC.cs" />
+    <Compile Include="EFS_Professional\HelperUtils.cs" />
+    <Compile Include="EFS_Professional\VersionInfo.cs" />
+    <EmbeddedResource Include="EFS_Professional.frmQualcommNVTools.resources" />
+    <EmbeddedResource Include="EFS_Professional.frmChangeLog.resources" />
+    <EmbeddedResource Include="EFS_Professional.frmWaitDeviceDialog.resources" />
+    <EmbeddedResource Include="EFS_Professional.frmWaitDialog.resources" />
+    <EmbeddedResource Include="EFS_Professional.frmPIT_Magic_Main.resources" />
+    <EmbeddedResource Include="EFS_Professional.DeviceFilterEditor.resources" />
+    <EmbeddedResource Include="EFS_Professional.frmEFSProMain.resources" />
+    <EmbeddedResource Include="EFS_Professional.Resources.resources" />
+    <EmbeddedResource Include="EFS_Professional.frmLauncher.resources" />
+  </ItemGroup>
+</Project>

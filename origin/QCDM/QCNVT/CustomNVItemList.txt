@@ -1,0 +1,8 @@
+;
+;Custom NV Item List
+;
+;Enter NV Items in comma separated, decimal format. (Example: 200,210,300)
+;
+;Add NV Item Range in 'From-To' format. (Example: 20-30,50-150,300-310) 
+;
+0-10,20-24,4200,4212-4214,4221-4229

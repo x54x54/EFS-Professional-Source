@@ -1,0 +1,42 @@
+; Many of models may restart, power off or stop communications at trying of 
+; access to some of NV-items (usually non-used NV-items) and do not allow to 
+; make FULL backup of NV-items because of it.
+;
+; In order to make FULL backup of NV-items for such models, you can place 
+; list of NV-items which cannot be read, in this file.
+;
+;
+; Format of presets below:
+;
+; XXXXXX:YYYY,YYYY
+;
+; Where:
+;
+; XXXXXX - name of preset in list of presets, any text message.
+; YYYY - number of NV-item, 4 digits in Hex format. 
+; You can place range also: YYYY-YYYY
+;
+;
+; After editing this file, please restart EFS Professional.
+;
+; Below, you can find presets for some models.
+
+
+Samsung SPH-A700:00AE,03C0-03C2,03E5,03E7,0404,0405,0407,0412,0413,0417,0451,0455,0466,0472,0480,0484
+Samsung SCH-i920:4027
+Samsung SPH-M300:03CD,03CE,03D0,03D1,03D3-03D6,03DC,03DD,03E0,03E1,0419,041D,0421,0424,0442,0446,044F,0458,045C,045D,046F,0470,0471,0474,0476,0477,0478,04AB
+Samsung SPH-M350 (Boost):4004,4031,4033,4034,407A,408C
+Samsung SPH-M500 (Bell):00AE,0D55,0D56,0D58,0D59,0D75,0D76,0D78,0D79,0DA3,0DA5,0DC1,0DC2,0DC4,0DCF,0DD0,0DD4,0E10,0E14,0E25,0E32,0E8A,0E95
+Samsung SPH-M800:003A,003B,00AE,00AF
+Samsung SPH-R211 (Cricket):13AD,13E9,13EA,13EC
+Samsung SPH-R350 (MetroPCS):1497,14CC,14CD,14CF
+Samsung SPH-R380 (MetroPCS):4001,4003,4079,407B,407C,407F,4080
+Samsung SPH-R500 (Cricket):4001,4033,404E,404F,4054
+Samsung SPH-R560 (Cricket):14FE,1533,1534,1536
+Samsung SCH-U350:4001,4003,4031,4034
+Samsung SCH-U360:4001,4003,4031,4034
+Samsung SCH-U410:4001,4019,401A,4031,4052-4054
+Samsung SCH-U640:4001,4003,4078-407A,4087
+Samsung SCH-U740:4001,4019,401A,4033,4052-4054
+Samsung SCH-U810:4081,4088,40B0,40BA-40C2,40D8,4123,4124,4147,4184,4148,420E,420F,4210,4211,4214,4215,422B,4239
+Samsung SCH-U820:4001,4003,4095-4098
